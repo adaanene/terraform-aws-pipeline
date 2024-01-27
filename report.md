@@ -74,11 +74,11 @@ The problematic code snippet:
 
 - This caused an error, and the issue was related to the start time. I resolved it by setting the start time to a future date.
 
-    ![problem2](../problem2.png)
+    ![problem2](./screenshots/problem2.png)
 
     The solution:
     
-    ![problem2-fix](../problem2-fix.png)
+    ![problem2-fix](./screenshots/problem2-fix.png)
 
 
 **4. Jenkins Console Approval Issue:**
@@ -87,7 +87,7 @@ The problematic code snippet:
 
 - The error was encountered in the Jenkins console, as depicted here: 
 
-    ![problem4](../problem4.png)
+    ![problem4](./screenshots/problem4.png)
 
 - A solution was found by approving the scripts, and further details can be found in this Stack Overflow [thread](https://stackoverflow.com/questions/38276341/jenkins-ci-pipeline-scripts-not-permitted-to-use-method-groovy-lang-groovyobject). 
 
