@@ -23,6 +23,7 @@ pipeline {
                     sh "terraform validate"
                     echo "Terraform validation complete"
             }
+          }
         }
 
         stage('Terraform Plan') {
@@ -39,7 +40,7 @@ pipeline {
                     }
                 }
             }
-        }
+        
 
         stage('Terraform Apply') {
             when {
@@ -76,8 +77,12 @@ pipeline {
                         currentBuild.result = 'FAILURE'
                         error("Terraform apply failed: ${e.message}")
                     }
+
+                    
                 }
             }
+          }
+        }
 
         stage('Cleanup') {
             steps {
@@ -112,6 +117,4 @@ pipeline {
     }
    }
  }
-}
-}
 
