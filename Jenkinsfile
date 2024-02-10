@@ -40,7 +40,7 @@ pipeline {
                     }
                 }
             }
-        
+        }
 
         stage('Terraform Apply') {
             when {
